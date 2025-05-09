@@ -1,0 +1,52 @@
+baseURL: https://paugesteros.com/
+languageCode: en-us
+title: Hugo Pauget Ballesteros
+theme: PaperMod
+enableEmoji: true
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - $$
+              - $$
+          inline:
+            - - $
+              - $
+params:
+  math: true
+  profileMode:
+    enabled: true
+    title: Hugo Pauget Ballesteros
+    subtitle: PhD student in the Jean le Rond d'Alembert Institute
+    imageUrl: photo-circle.jpg
+    imageTitle: Photo of me at a conference
+    buttons:
+      - name: Posts
+        url: posts/
+      - name: Papers
+        url: papers/
+      - name: Courses
+        url: courses/
+      - name: Tags
+        url: tags/
+  socialIcons:
+    - name: CV
+      url: cv.pdf
+    - name: Email
+      url: mailto:hugo.pauget@dalembert.upmc.fr
+    - name: Location
+      url: location/
+    - name: Office Hours
+      url: officehours/
+    - name: Google Scholar
+      url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+    - name: GitHub
+      url: https://github.com/pmichaillat

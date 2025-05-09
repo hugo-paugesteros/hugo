@@ -1,0 +1,20 @@
+#    [[menus.main]]
+#        name = 'Home'
+#        pageRef = '/'
+#        weight = 1
+[[main]]
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+[[main]]
+    name = 'Papers'
+    pageRef = '/papers'
+    weight = 20
+[[main]]
+    name = 'Courses'
+    pageRef = '/courses'
+    weight = 40
+[[main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 60
