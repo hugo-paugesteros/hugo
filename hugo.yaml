@@ -10,6 +10,8 @@ taxonomies:
   author: authors
 markup:
   goldmark:
+    renderer:
+      unsafe: true
     extensions:
       passthrough:
         enable: true
@@ -25,9 +27,9 @@ params:
   profileMode:
     enabled: true
     title: Hugo Pauget Ballesteros
-    subtitle: PhD student in the Jean le Rond d'Alembert Institute
-    imageUrl: photo-circle.jpg
-    imageTitle: Photo of me at a conference
+    subtitle: PhD student in Acoustics at the [Jean le Rond d'Alembert Institute](http://www.dalembert.upmc.fr/ijlrda/). <br> My work focuses on the sound identity of violins.
+    imageUrl: photo2-crop.jpg
+    imageTitle: Me in my office
     buttons:
       - name: Posts
         url: posts/
@@ -44,8 +46,8 @@ params:
       url: mailto:hugo.pauget@dalembert.upmc.fr
     - name: Location
       url: location/
-    - name: Office Hours
-      url: officehours/
+    # - name: Office Hours
+    #   url: officehours/
     - name: Google Scholar
       url: https://scholar.google.com/citations?user=7v-rABAAAAAJ
     - name: GitHub
