@@ -6,8 +6,50 @@
     <description>Recent content in Tags on Hugo Pauget Ballesteros</description>
     <generator>Hugo -- 0.146.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 May 2025 18:32:43 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 23:08:16 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keyword 1</title>
+      <link>http://localhost:1313/tags/keyword-1/</link>
+      <pubDate>Sat, 10 May 2025 23:08:16 +0200</pubDate>
+      <guid>http://localhost:1313/tags/keyword-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Keyword 2</title>
+      <link>http://localhost:1313/tags/keyword-2/</link>
+      <pubDate>Sat, 10 May 2025 23:08:16 +0200</pubDate>
+      <guid>http://localhost:1313/tags/keyword-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Keyword 3</title>
+      <link>http://localhost:1313/tags/keyword-3/</link>
+      <pubDate>Sat, 10 May 2025 23:08:16 +0200</pubDate>
+      <guid>http://localhost:1313/tags/keyword-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Keyword 4</title>
+      <link>http://localhost:1313/tags/keyword-4/</link>
+      <pubDate>Sat, 10 May 2025 23:08:16 +0200</pubDate>
+      <guid>http://localhost:1313/tags/keyword-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Sat, 10 May 2025 22:56:31 +0200</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Violin Identification</title>
+      <link>http://localhost:1313/tags/violin-identification/</link>
+      <pubDate>Sat, 10 May 2025 22:56:31 +0200</pubDate>
+      <guid>http://localhost:1313/tags/violin-identification/</guid>
+      <description></description>
+    </item>
     <item>
       <title>MIR</title>
       <link>http://localhost:1313/tags/mir/</link>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Influence des paramètres de contrôle de la corde frottée sur certains descripteurs audio en conditions réelles de jeu | Hugo Pauget Ballesteros</title>
+<meta name="keywords" content="keyword 1, keyword 2, keyword 3, keyword 4">
+<meta name="description" content="Paper description for search engines (less than 155 characters)">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/papers/parametres-archet-cfa/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/papers/parametres-archet-cfa/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+  integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib"
+  crossorigin="anonymous"
+>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+  integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh"
+  crossorigin="anonymous">
+</script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);">
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Hugo Pauget Ballesteros (Alt + H)">Hugo Pauget Ballesteros</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/courses/" title="Courses">
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Influence des paramètres de contrôle de la corde frottée sur certains descripteurs audio en conditions réelles de jeu
+    </h1>
+    <div class="post-description">
+      Paper description for search engines (less than 155 characters)
+    </div>
+    <div class="post-meta"><span title='2025-05-10 23:08:16 +0200 CEST'>May 10, 2025</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+            <img loading="eager" src="http://localhost:1313/papers/parametres-archet-cfa/cover.png" alt="Figure title (preferably 1280x720 pixels)">
+        
+</figure>
+  <div class="post-content"><hr>
+<h5 id="download">Download:<a hidden class="anchor" aria-hidden="true" href="#download">#</a></h5>
+<ul>
+<li><a href="paper.pdf">Paper</a></li>
+<li><a href="appendix.pdf">Online appendix</a></li>
+<li><a href="https://github.com/paper_repo">Code and data</a></li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract:<a hidden class="anchor" aria-hidden="true" href="#abstract">#</a></h5>
+<p>Les modèles classiques de la corde frottée reposent sur trois paramètres principaux : la vitesse d&rsquo;archet, la force d&rsquo;archet et la distance de l&rsquo;archet au chevalet. Dans l&rsquo;article “The Violinist’s Sound Palette: Spectral Centroid, Pitch Flattening and Anomalous Low Frequencies.”, Schoonderwaldt et al. étudient l&rsquo;influence de ces paramètres sur le spectroïde central à l&rsquo;aide d&rsquo;un monocorde et d&rsquo;une machine à frotter. Cependant, cette étude se limite à des conditions expérimentales éloignées des conditions réelles de jeu et à l&rsquo;analyse des parties stables des sons.</p>
+<p>Pour pallier ces limites, nous avons analysé des enregistrements réalisés par des violonistes jouant sur différents violons et en explorant diverses configurations de paramètres de jeu. Plusieurs descripteurs audio ont été calculés, et des tests statistiques ont permis d&rsquo;identifier ceux les plus sensibles aux variations des paramètres. Nous avons étudié à la fois les parties stables et les notes dans leur entièreté.</p>
+<p>Nos résultats confirment que, sur la partie stable, la force d&rsquo;archet a le plus d&rsquo;influence sur le centroïde spectral, suivie de la vitesse, tandis que la distance au chevalet joue un rôle mineur. En revanche, l&rsquo;analyse des notes dans leur entièreté révèle une influence dominante de la vitesse d&rsquo;archet sur les descripteurs étudiés. En particulier, ceux liés à l&rsquo;enveloppe du signal présentent une forte corrélation avec ce paramètre. En accord avec les modèles de corde frottée, les variations de la force et de la distance par rapport au chevalet se traduisent par des modifications du contenu spectral (fréquence fondamentale, contenu harmonique, etc.). De plus, le large nombre de descripteurs étudiés permet de comprendre plus précisément comment le geste du violoniste module la sonorité de l&rsquo;instrument.</p>
+<hr>
+<h5 id="figure-x--figure-title">Figure X:  Figure title<a hidden class="anchor" aria-hidden="true" href="#figure-x--figure-title">#</a></h5>
+<p><img loading="lazy" src="figurex.png"></p>
+<hr>
+<h5 id="citation">Citation<a hidden class="anchor" aria-hidden="true" href="#citation">#</a></h5>
+<p>Author 1, Author 2. Year. &ldquo;Title.&rdquo; <em>Journal</em> Volume (Issue): First page–Last page. <a href="https://doi.org/paper_doi">https://doi.org/paper_doi</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#a6e22e">@article</span>{AAYY,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">author</span> = <span style="color:#e6db74">{Author 1 and Author 2}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">doi</span> = <span style="color:#e6db74">{paper_doi}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">journal</span> = <span style="color:#e6db74">{Journal}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">number</span> = <span style="color:#e6db74">{Issue}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pages</span> = <span style="color:#e6db74">{XXX--YYY}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">{Title}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">volume</span> = <span style="color:#e6db74">{Volume}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">year</span> = <span style="color:#e6db74">{Year}</span>}
+</span></span></code></pre></div><hr>
+<h5 id="related-material">Related material<a hidden class="anchor" aria-hidden="true" href="#related-material">#</a></h5>
+<ul>
+<li><a href="presentation.pdf">Presentation slides</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/keyword-1/">Keyword 1</a></li>
+      <li><a href="http://localhost:1313/tags/keyword-2/">Keyword 2</a></li>
+      <li><a href="http://localhost:1313/tags/keyword-3/">Keyword 3</a></li>
+      <li><a href="http://localhost:1313/tags/keyword-4/">Keyword 4</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Hugo Pauget Ballesteros</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

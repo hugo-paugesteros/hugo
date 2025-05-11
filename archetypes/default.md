@@ -1,5 +1,6 @@
 +++
 date = '{{ .Date }}'
 draft = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+title: "{{ substr .Name 11 | humanize | title }}"
+slug: {{ substr .Name 11 }}
 +++

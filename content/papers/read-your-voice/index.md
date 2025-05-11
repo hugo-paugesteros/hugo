@@ -5,10 +5,9 @@ authors:
     - "Philippe Lalitte"
     - "Claudia Fritz"
 
-date: 2025-05-09T18:19:12+02:00
+date: 2022-10-10
 doi: ""
 
-publishDate: 2025-05-09T18:19:12+02:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

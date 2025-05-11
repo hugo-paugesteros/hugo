@@ -6,21 +6,14 @@
     <description>Recent content in Keyword 3 on Hugo Pauget Ballesteros</description>
     <generator>Hugo -- 0.146.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 May 2025 18:32:43 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 23:08:16 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/keyword-3/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TAV</title>
-      <link>http://localhost:1313/courses/tav/</link>
-      <pubDate>Fri, 09 May 2025 18:32:43 +0200</pubDate>
-      <guid>http://localhost:1313/courses/tav/</guid>
-      <description>Description of the course (less than 155 characters)</description>
-    </item>
-    <item>
-      <title>Read Your Voice</title>
-      <link>http://localhost:1313/papers/read-your-voice/</link>
-      <pubDate>Fri, 09 May 2025 18:19:12 +0200</pubDate>
-      <guid>http://localhost:1313/papers/read-your-voice/</guid>
-      <description>Read Your Voice is a playful interactive multimedia system that allows the user to record a sound, encode it as an image, and then play it back using his smartphone, while controlling the speed and direction of playback.</description>
+      <title>Influence des paramètres de contrôle de la corde frottée sur certains descripteurs audio en conditions réelles de jeu</title>
+      <link>http://localhost:1313/papers/parametres-archet-cfa/</link>
+      <pubDate>Sat, 10 May 2025 23:08:16 +0200</pubDate>
+      <guid>http://localhost:1313/papers/parametres-archet-cfa/</guid>
+      <description>Paper description for search engines (less than 155 characters)</description>
     </item>
   </channel>
 </rss>
