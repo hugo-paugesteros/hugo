@@ -30,15 +30,6 @@
       <description>Description of the course (less than 155 characters)</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Fri, 09 May 2025 16:30:06 +0200</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
-&lt;p&gt;Lorem&lt;/p&gt;
-$$ \alpha = \sum_k 4 $$&lt;p&gt;And then $e$&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Location</title>
       <link>http://localhost:1313/location/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>

@@ -64,19 +64,5 @@
       <guid>http://localhost:1313/tags/signal-processing/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Code</title>
-      <link>http://localhost:1313/tags/code/</link>
-      <pubDate>Fri, 09 May 2025 16:30:06 +0200</pubDate>
-      <guid>http://localhost:1313/tags/code/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Re</title>
-      <link>http://localhost:1313/tags/re/</link>
-      <pubDate>Fri, 09 May 2025 16:30:06 +0200</pubDate>
-      <guid>http://localhost:1313/tags/re/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
