@@ -71,6 +71,12 @@
     <loc>http://localhost:1313/location/</loc>
     <lastmod>2025-05-08T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/oberlin-workshop/</loc>
+    <lastmod>2024-11-29T19:40:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-29T19:40:00+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/papers/read-your-voice/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
   </url><url>
